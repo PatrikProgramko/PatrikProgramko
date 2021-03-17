@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	float metr, cm, dm,mm, vysledek,cmmetr;
+	int vyber;
+	
+	printf("\nVytvor program pro prevody delek  z m na cm, dm a mm. \nUzivatel na vstupu zada delku v m a hodnotu, na kterou chce tuto delku prevest.\n\n");
+
+	printf("\nZadej hodnotu v metrech: \n");
+	scanf("%f",&metr);
+	
+	cmmetr = metr * 100;
+	
+	printf("Vyber z 3 moznosti 1 = z m na cm, 2 = z m na dm, 3 = z m na mm\n");
+	scanf("%d",&vyber);
+	
+	if(vyber == 1){
+		vysledek = metr * 100;
+		printf("\nVysledek v cm je: %.3f\n",vysledek);
+	    }
+	    else if(vyber == 2){
+		      vysledek = metr * 10;
+		      printf("\nVysledek v dm je: %.3f\n",vysledek);
+		      
+	          }
+	          else if(vyber == 3){
+		             vysledek = metr * 1000;
+                     printf("\nVysledek je: %.3f\n",vysledek);		
+		
+	                  }
+	                  else{
+	                    printf("\nNeplatny vysledek\n");
+	
+                     	}
+	
+
+	system("pause");
+	
+	
+}
